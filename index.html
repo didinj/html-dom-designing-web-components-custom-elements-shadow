@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Components Demo</title>
+</head>
+<body>
+  <h1>Web Components: Djam Card Demo</h1>
+
+  <djam-hello greeting="Welcome!"></djam-hello>
+
+  <djam-card title="Djamware Web Component">
+    <p>This card is rendered using a Shadow DOM and a customizable title.</p>
+  </djam-card>
+
+  <djam-card title="With Image">
+    <img src="https://via.placeholder.com/400x200" alt="Demo Image" />
+    <p>You can slot images and any HTML into the card body.</p>
+  </djam-card>
+
+  <script type="module" src="./components/djam-hello.js"></script>
+  <script type="module" src="./components/djam-card.js"></script>
+</body>
+</html>
